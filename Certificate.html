@@ -39,7 +39,7 @@
             display: inline-block;
             vertical-align: top;
             margin-left: 20px;
-            max-width: calc(100% - 170px);
+            
         }
         .Title h1 {
             margin: 0;
@@ -70,10 +70,10 @@
             transition: color 0.3s ease;
         }
         .Material h3:hover, .Hobbies h4:hover {
-            color: #0f969c; /* Change this to your preferred hover color */
+            color: #0f969c; 
         }
         .schedule-title {
-            font-size: 28px;
+            
             font-weight: bold;
             margin-bottom: 20px;
             margin-top: 20px;
@@ -117,12 +117,7 @@
         }
       
        
-        @media (max-width: 600px) {
-            .profile-container {
-                display: block;
-                text-align: center;
-                padding: 10px;
-            }
+       
             .profile-image {
                 display: block;
                 margin: 0 auto;
@@ -136,20 +131,23 @@
                 text-align: center;
                 max-width: 100%;
             }
-        }
+        
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container"> <!--I've added all the content in one div , give it a class to add the style for all the page -->
+            <!--Image-->
             <div class="image">
                 <img src="Assets/myPic.jpeg" alt="my Image" class="img">
             </div>
+            <!--Title-->
             <div class="Title">
                 <h1>Kawthar Shameseldeen</h1>
                 <h3>Computer & Communication Engineering</h3>
                 <h4>Islamic University of Lebanon</h4>
             </div>
+            <!--Material-->
             <div class="Material">
                 <h3>Material:</h3>
                 <ul>
@@ -166,9 +164,11 @@
                     <li>Software Engineering</li>
                 </ul>
             </div>
-            <div class="schedule-title">Weekly Schedule</div>
+            <!--Schedule-->
+            <div class="schedule-title"><h3>Weekly Schedule</h3></div>
             <table class="schedule">
                 <thead>
+                    <!--First Row-->
                     <tr>
                         <th>Time</th>
                         <th>Tuesday</th>
@@ -178,6 +178,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!--Second Row-->
                     <tr>
                         <td class="time-slot">8:00 - 9:15</td>
                         <td class="activity">Computer Architecture</td>
@@ -185,6 +186,7 @@
                         <td class="activity">Network Essentials</td>
                         <td class="activity">Network Essentials</td>
                     </tr>
+                    <!--Third Row-->
                     <tr>
                         <td class="time-slot">9:15 - 10:30</td>
                         <td class="activity">Machine Learning</td>
@@ -192,6 +194,7 @@
                         <td class="activity">Network LAB</td>
                         <td class="activity">OS LAB</td>
                     </tr>
+                    <!--Fourth Row-->
                     <tr>
                         <td class="time-slot">11:00 - 12:15</td>
                         <td class="activity">OOP</td>
@@ -199,6 +202,7 @@
                         <td class="activity">OOP</td>
                         <td class="activity">Software Eng</td>
                     </tr>
+                    <!--Fifth Row-->
                     <tr>
                         <td class="time-slot">12:15 - 1:30</td>
                         <td class="activity">OS</td>
@@ -206,9 +210,11 @@
                         <td class="activity"></td>
                         <td class="activity"></td>
                     </tr>
-                    <!-- Add more rows as needed -->
+                   
                 </tbody>
             </table>
+            <!--End Table -->
+            <!--Hobbies-->
             <div class="Hobbies">
                 <h4>Hobbies:</h4>
                 <p>
